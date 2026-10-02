@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 20px; font-family: Arial, sans-serif; background: #e8e8e8; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.urna { display: flex; gap: 16px; width: 100%; max-width: 900px; padding: 20px; background: #d9d6cf; border: 4px solid #888; border-radius: 12px; }
+.tela { flex: 1; min-height: 430px; padding: 16px; display: flex; flex-direction: column; gap: 10px; background: #f4f4f0; border: 4px inset #666; }
+.topo { font-size: .8rem; color: #444; }
+.cargo { font-size: 1.6rem; font-weight: bold; }
+.cargo small { font-size: 1rem; font-weight: normal; }
+.digitos { display: flex; gap: 6px; }
+.caixa { width: 38px; height: 48px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: bold; background: #fff; border: 2px solid #000; }
+.info { display: flex; gap: 14px; align-items: flex-start; flex-wrap: wrap; }
+.foto { width: 110px; height: 140px; object-fit: cover; background: #ddd; border: 1px solid #999; }
+.dados p { margin: 4px 0; }
+.aviso { font-size: 1.4rem; font-weight: bold; }
+.aviso.erro { color: #b00020; font-size: 1rem; }
+.rodape { margin-top: auto; padding-top: 8px; border-top: 1px solid #999; font-size: .85rem; white-space: pre-line; }
+.fim { margin: auto; font-size: 5rem; font-weight: bold; text-align: center; }
+.fim.pequeno { font-size: 2rem; }
+.sub { text-align: center; font-size: 1.2rem; }
+.msg { margin: auto; text-align: center; font-size: 1.1rem; }
+
+.teclado { width: 240px; padding: 14px; display: flex; flex-direction: column; gap: 14px; background: #333; border-radius: 8px; }
+.numeros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.numeros .tecla:last-child { grid-column: 2; }
+.tecla { padding: 14px 0; font-size: 1.3rem; font-weight: bold; color: #fff; background: #1c1c1c; border: none; border-radius: 4px; cursor: pointer; }
+.tecla:active { transform: scale(.96); }
+.acoes { display: flex; gap: 6px; }
+.acoes .tecla { flex: 1; padding: 12px 0; font-size: .7rem; color: #000; }
+.branco { background: #fff; }
+.corrige { background: #f39c12; }
+.confirma { background: #2ecc71; }
+
+.fiscal { width: 100%; max-width: 900px; }
+.fiscal ul { margin: 0 0 10px; padding-left: 18px; font-size: .9rem; }
+.fiscal .ok { color: #1b7a1b; }
+.fiscal .falha { color: #b00020; font-weight: bold; }
+.fiscal button { padding: 10px 14px; font-weight: bold; cursor: pointer; }
+.dica { font-size: .8rem; color: #555; }
+
+.boletim[hidden] { display: none; }
+.boletim { position: fixed; inset: 0; padding: 20px; overflow: auto; background: rgba(0, 0, 0, .65); display: flex; justify-content: center; align-items: flex-start; }
+.boletim-conteudo { width: 100%; max-width: 760px; padding: 20px; background: #fff; border-radius: 8px; }
+.boletim table { width: 100%; margin-bottom: 18px; border-collapse: collapse; }
+.boletim th, .boletim td { padding: 6px 8px; text-align: left; border-bottom: 1px solid #ddd; }
+.boletim th { background: #f0f0f0; }
+.boletim .total td { font-weight: bold; }
+.boletim-acoes { display: flex; gap: 10px; }
+.boletim-acoes button { padding: 10px 14px; font-weight: bold; cursor: pointer; }
+
+@media (max-width: 700px) { .urna { flex-direction: column; } .teclado { width: 100%; } }

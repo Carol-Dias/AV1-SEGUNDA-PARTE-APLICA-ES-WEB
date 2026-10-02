@@ -1,0 +1,7 @@
+{
+  "partidos": [
+    { "sigla": "PDisney", "nome": "Disney", "numero": "91", "arquivo": "dados/PDisney.json" },
+    { "sigla": "PMarvel", "nome": "Marvel", "numero": "92", "arquivo": "dados/PMarvel.json" },
+    { "sigla": "PDC",     "nome": "DC",     "numero": "93", "arquivo": "dados/PDC.json" }
+  ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica 2026</title>
+    <link rel="stylesheet" href="urna.css">
+</head>
+<body>
+    <main class="urna">
+        <section class="tela" id="tela"></section>
+
+        <section class="teclado">
+            <div class="numeros">
+                <button class="tecla" data-tecla="1">1</button>
+                <button class="tecla" data-tecla="2">2</button>
+                <button class="tecla" data-tecla="3">3</button>
+                <button class="tecla" data-tecla="4">4</button>
+                <button class="tecla" data-tecla="5">5</button>
+                <button class="tecla" data-tecla="6">6</button>
+                <button class="tecla" data-tecla="7">7</button>
+                <button class="tecla" data-tecla="8">8</button>
+                <button class="tecla" data-tecla="9">9</button>
+                <button class="tecla" data-tecla="0">0</button>
+            </div>
+            <div class="acoes">
+                <button class="tecla branco" data-tecla="branco">BRANCO</button>
+                <button class="tecla corrige" data-tecla="corrige">CORRIGE</button>
+                <button class="tecla confirma" data-tecla="confirma">CONFIRMA</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="fiscal">
+        <ul id="statusPartidos"></ul>
+        <button id="btnEncerrar">Encerrar votação (fiscal)</button>
+        <p class="dica">Teclado: 0-9 digitam · B = Branco · Backspace = Corrige · Enter = Confirma</p>
+    </section>
+
+    <section id="boletim" class="boletim" hidden>
+        <div class="boletim-conteudo">
+            <h2>Boletim de Urna</h2>
+            <div id="boletimCorpo"></div>
+            <div class="boletim-acoes">
+                <button id="btnBaixar">Baixar votos.json novamente</button>
+                <button id="btnNova">Nova votação</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="dados.js"></script>
+    <script src="som.js"></script>
+    <script src="boletim.js"></script>
+    <script src="urna.js"></script>
+</body>
+</html>
